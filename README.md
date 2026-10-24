@@ -1,20 +1,19 @@
-# 电商风险控制系统 2.3 —— 风控 Agent
+# 电商风险控制系统  —— 风控 Agent
 
-按《项目一_风控Agent》开发文档（R1–R7）实现的可运行工程：Python 3.12 + FastAPI +
+按《风控Agent》开发文档（R1–R7）实现的可运行工程：Python 3.12 + FastAPI +
 SQLAlchemy 2.0 + Alembic，手写 Function Calling 循环（**未使用 LangChain**），
 前端 Vue3 + Vite + TypeScript + Element Plus + Pinia。
 
 LLM 走 OpenAI 兼容接口：`https://api.deepseek.com/v1`，模型 `deepseek-flash`
 （即文档中的 DeepSeek-V4.1-Flash，该网关注册名为 `deepseek-flash`）。
 
-> 项目位置：`E:\Desktop\项目一`（`.venv` 与 `frontend/node_modules` 已随项目迁入，可直接运行）
+（`.venv` 与 `frontend/node_modules` 已随项目迁入，可直接运行）
 
 ---
 
 ## 1. 快速开始
 
-```bash
-cd "E:/Desktop/项目一"
+```bash"
 
 # 1) 依赖（.venv 已就绪，可跳过；全新环境再执行）
 python -m venv .venv
@@ -278,7 +277,7 @@ seed 时会打印三个演示订单的特征数与预期评分：
 
 ## 8. 评测体系（E1–E5）
 
-按《项目一_风控Agent_评测》实现三层评测：**不使用 LLM-judge，全部为确定性断言**。
+按《风控Agent_评测》实现三层评测：**不使用 LLM-judge，全部为确定性断言**。
 
 | 模块 | 文件 | 内容 | 结果 |
 |---|---|---|---|
