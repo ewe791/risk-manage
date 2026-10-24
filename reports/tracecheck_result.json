@@ -1,0 +1,434 @@
+{
+  "summary": {
+    "traces": 25,
+    "tool_accuracy": {
+      "pass": 25,
+      "total": 25,
+      "rate": 1.0,
+      "threshold": 0.9,
+      "verdict": "PASS"
+    },
+    "step_efficiency": {
+      "pass": 25,
+      "total": 25,
+      "rate": 1.0,
+      "threshold": 0.9,
+      "verdict": "PASS"
+    },
+    "failure_modes": {
+      "counts": {},
+      "total": 0,
+      "allowed": 0,
+      "traces": {
+        "infinite_loop": [],
+        "context_overflow": [],
+        "tool_error_unhandled": []
+      },
+      "verdict": "PASS"
+    },
+    "weighted_score": 1.0,
+    "weights": {
+      "tool_accuracy": 0.4,
+      "step_efficiency": 0.3,
+      "failure_modes": 0.3
+    }
+  },
+  "results": [
+    {
+      "trace_id": "risk_001",
+      "user_input": "查 U1001 订单 O2001 的风险",
+      "expected_tools": [
+        "risk_check"
+      ],
+      "actual_tools": [
+        "risk_check"
+      ],
+      "tool_accuracy": "PASS",
+      "tool_accuracy_reason": "工具序列与标注一致",
+      "step_efficiency": "PASS",
+      "step_efficiency_reason": "无重复/无冗余步骤",
+      "failure_modes": [],
+      "failure_reason": "无失败模式"
+    },
+    {
+      "trace_id": "risk_002",
+      "user_input": "下单环节查 U1002 的 O2002",
+      "expected_tools": [
+        "risk_check"
+      ],
+      "actual_tools": [
+        "risk_check"
+      ],
+      "tool_accuracy": "PASS",
+      "tool_accuracy_reason": "工具序列与标注一致",
+      "step_efficiency": "PASS",
+      "step_efficiency_reason": "无重复/无冗余步骤",
+      "failure_modes": [],
+      "failure_reason": "无失败模式"
+    },
+    {
+      "trace_id": "risk_003",
+      "user_input": "售后申请也查一下 U1001 的 O2000",
+      "expected_tools": [
+        "risk_check"
+      ],
+      "actual_tools": [
+        "risk_check"
+      ],
+      "tool_accuracy": "PASS",
+      "tool_accuracy_reason": "工具序列与标注一致",
+      "step_efficiency": "PASS",
+      "step_efficiency_reason": "无重复/无冗余步骤",
+      "failure_modes": [],
+      "failure_reason": "无失败模式"
+    },
+    {
+      "trace_id": "risk_004",
+      "user_input": "物流投诉事件查 U1001 的 O1999",
+      "expected_tools": [
+        "risk_check"
+      ],
+      "actual_tools": [
+        "risk_check"
+      ],
+      "tool_accuracy": "PASS",
+      "tool_accuracy_reason": "工具序列与标注一致",
+      "step_efficiency": "PASS",
+      "step_efficiency_reason": "无重复/无冗余步骤",
+      "failure_modes": [],
+      "failure_reason": "无失败模式"
+    },
+    {
+      "trace_id": "risk_005",
+      "user_input": "看下评估 RA-fb3a388d 的详情",
+      "expected_tools": [
+        "get_assessment"
+      ],
+      "actual_tools": [
+        "get_assessment"
+      ],
+      "tool_accuracy": "PASS",
+      "tool_accuracy_reason": "工具序列与标注一致",
+      "step_efficiency": "PASS",
+      "step_efficiency_reason": "无重复/无冗余步骤",
+      "failure_modes": [],
+      "failure_reason": "无失败模式"
+    },
+    {
+      "trace_id": "risk_006",
+      "user_input": "有哪些启用的规则",
+      "expected_tools": [
+        "list_rules"
+      ],
+      "actual_tools": [
+        "list_rules"
+      ],
+      "tool_accuracy": "PASS",
+      "tool_accuracy_reason": "工具序列与标注一致",
+      "step_efficiency": "PASS",
+      "step_efficiency_reason": "无重复/无冗余步骤",
+      "failure_modes": [],
+      "failure_reason": "无失败模式"
+    },
+    {
+      "trace_id": "risk_007",
+      "user_input": "查一下和黑名单有关的规则",
+      "expected_tools": [
+        "list_rules"
+      ],
+      "actual_tools": [
+        "list_rules"
+      ],
+      "tool_accuracy": "PASS",
+      "tool_accuracy_reason": "工具序列与标注一致",
+      "step_efficiency": "PASS",
+      "step_efficiency_reason": "无重复/无冗余步骤",
+      "failure_modes": [],
+      "failure_reason": "无失败模式"
+    },
+    {
+      "trace_id": "risk_008",
+      "user_input": "待审案件有哪些",
+      "expected_tools": [
+        "list_cases"
+      ],
+      "actual_tools": [
+        "list_cases"
+      ],
+      "tool_accuracy": "PASS",
+      "tool_accuracy_reason": "工具序列与标注一致",
+      "step_efficiency": "PASS",
+      "step_efficiency_reason": "无重复/无冗余步骤",
+      "failure_modes": [],
+      "failure_reason": "无失败模式"
+    },
+    {
+      "trace_id": "risk_009",
+      "user_input": "已驳回的案件列一下",
+      "expected_tools": [
+        "list_cases"
+      ],
+      "actual_tools": [
+        "list_cases"
+      ],
+      "tool_accuracy": "PASS",
+      "tool_accuracy_reason": "工具序列与标注一致",
+      "step_efficiency": "PASS",
+      "step_efficiency_reason": "无重复/无冗余步骤",
+      "failure_modes": [],
+      "failure_reason": "无失败模式"
+    },
+    {
+      "trace_id": "risk_010",
+      "user_input": "看板高风险占比多少",
+      "expected_tools": [
+        "get_dashboard"
+      ],
+      "actual_tools": [
+        "get_dashboard"
+      ],
+      "tool_accuracy": "PASS",
+      "tool_accuracy_reason": "工具序列与标注一致",
+      "step_efficiency": "PASS",
+      "step_efficiency_reason": "无重复/无冗余步骤",
+      "failure_modes": [],
+      "failure_reason": "无失败模式"
+    },
+    {
+      "trace_id": "risk_011",
+      "user_input": "最近两周的看板",
+      "expected_tools": [
+        "get_dashboard"
+      ],
+      "actual_tools": [
+        "get_dashboard"
+      ],
+      "tool_accuracy": "PASS",
+      "tool_accuracy_reason": "工具序列与标注一致",
+      "step_efficiency": "PASS",
+      "step_efficiency_reason": "无重复/无冗余步骤",
+      "failure_modes": [],
+      "failure_reason": "无失败模式"
+    },
+    {
+      "trace_id": "risk_012",
+      "user_input": "U1001 退款几次",
+      "expected_tools": [
+        "risk_check",
+        "get_user_profile"
+      ],
+      "actual_tools": [
+        "risk_check",
+        "get_user_profile"
+      ],
+      "tool_accuracy": "PASS",
+      "tool_accuracy_reason": "工具序列与标注一致",
+      "step_efficiency": "PASS",
+      "step_efficiency_reason": "无重复/无冗余步骤",
+      "failure_modes": [],
+      "failure_reason": "无失败模式"
+    },
+    {
+      "trace_id": "risk_013",
+      "user_input": "看黑名单",
+      "expected_tools": [
+        "manage_blacklist"
+      ],
+      "actual_tools": [
+        "manage_blacklist"
+      ],
+      "tool_accuracy": "PASS",
+      "tool_accuracy_reason": "工具序列与标注一致",
+      "step_efficiency": "PASS",
+      "step_efficiency_reason": "无重复/无冗余步骤",
+      "failure_modes": [],
+      "failure_reason": "无失败模式"
+    },
+    {
+      "trace_id": "risk_014",
+      "user_input": "加黑名单 user U9999",
+      "expected_tools": [
+        "manage_blacklist"
+      ],
+      "actual_tools": [
+        "manage_blacklist"
+      ],
+      "tool_accuracy": "PASS",
+      "tool_accuracy_reason": "工具序列与标注一致",
+      "step_efficiency": "PASS",
+      "step_efficiency_reason": "无重复/无冗余步骤",
+      "failure_modes": [],
+      "failure_reason": "无失败模式"
+    },
+    {
+      "trace_id": "risk_015",
+      "user_input": "把黑名单 ADDR1001B 删掉",
+      "expected_tools": [
+        "manage_blacklist"
+      ],
+      "actual_tools": [
+        "manage_blacklist"
+      ],
+      "tool_accuracy": "PASS",
+      "tool_accuracy_reason": "工具序列与标注一致",
+      "step_efficiency": "PASS",
+      "step_efficiency_reason": "无重复/无冗余步骤",
+      "failure_modes": [],
+      "failure_reason": "无失败模式"
+    },
+    {
+      "trace_id": "risk_016",
+      "user_input": "查一下 U1001 的风险",
+      "expected_tools": [],
+      "actual_tools": [],
+      "tool_accuracy": "PASS",
+      "tool_accuracy_reason": "工具序列与标注一致",
+      "step_efficiency": "PASS",
+      "step_efficiency_reason": "无重复/无冗余步骤",
+      "failure_modes": [],
+      "failure_reason": "无失败模式"
+    },
+    {
+      "trace_id": "risk_017",
+      "user_input": "查一下订单 O2001 的风险",
+      "expected_tools": [],
+      "actual_tools": [],
+      "tool_accuracy": "PASS",
+      "tool_accuracy_reason": "工具序列与标注一致",
+      "step_efficiency": "PASS",
+      "step_efficiency_reason": "无重复/无冗余步骤",
+      "failure_modes": [],
+      "failure_reason": "无失败模式"
+    },
+    {
+      "trace_id": "risk_018",
+      "user_input": "按退款事件查一下 U1001 的 O2001",
+      "expected_tools": [],
+      "actual_tools": [],
+      "tool_accuracy": "PASS",
+      "tool_accuracy_reason": "工具序列与标注一致",
+      "step_efficiency": "PASS",
+      "step_efficiency_reason": "无重复/无冗余步骤",
+      "failure_modes": [],
+      "failure_reason": "无失败模式"
+    },
+    {
+      "trace_id": "risk_019",
+      "user_input": "通过 CASE-9d774a23",
+      "expected_tools": [],
+      "actual_tools": [],
+      "tool_accuracy": "PASS",
+      "tool_accuracy_reason": "工具序列与标注一致",
+      "step_efficiency": "PASS",
+      "step_efficiency_reason": "无重复/无冗余步骤",
+      "failure_modes": [],
+      "failure_reason": "无失败模式"
+    },
+    {
+      "trace_id": "risk_020",
+      "user_input": "把 R05 停用",
+      "expected_tools": [
+        "list_rules",
+        "toggle_rule"
+      ],
+      "actual_tools": [
+        "list_rules",
+        "toggle_rule"
+      ],
+      "tool_accuracy": "PASS",
+      "tool_accuracy_reason": "工具序列与标注一致",
+      "step_efficiency": "PASS",
+      "step_efficiency_reason": "无重复/无冗余步骤",
+      "failure_modes": [],
+      "failure_reason": "无失败模式"
+    },
+    {
+      "trace_id": "risk_021",
+      "user_input": "通过 CASE-9d774a23，备注：资料齐全",
+      "expected_tools": [
+        "review_case"
+      ],
+      "actual_tools": [
+        "review_case"
+      ],
+      "tool_accuracy": "PASS",
+      "tool_accuracy_reason": "工具序列与标注一致",
+      "step_efficiency": "PASS",
+      "step_efficiency_reason": "无重复/无冗余步骤",
+      "failure_modes": [],
+      "failure_reason": "无失败模式"
+    },
+    {
+      "trace_id": "risk_022",
+      "user_input": "驳回 CASE-19f4a759，备注：证据不足",
+      "expected_tools": [
+        "review_case"
+      ],
+      "actual_tools": [
+        "review_case"
+      ],
+      "tool_accuracy": "PASS",
+      "tool_accuracy_reason": "工具序列与标注一致",
+      "step_efficiency": "PASS",
+      "step_efficiency_reason": "无重复/无冗余步骤",
+      "failure_modes": [],
+      "failure_reason": "无失败模式"
+    },
+    {
+      "trace_id": "risk_023",
+      "user_input": "审核 CASE-NOTEXIST，备注：测试",
+      "expected_tools": [
+        "review_case"
+      ],
+      "actual_tools": [
+        "review_case"
+      ],
+      "tool_accuracy": "PASS",
+      "tool_accuracy_reason": "工具序列与标注一致",
+      "step_efficiency": "PASS",
+      "step_efficiency_reason": "无重复/无冗余步骤",
+      "failure_modes": [],
+      "failure_reason": "无失败模式"
+    },
+    {
+      "trace_id": "risk_024",
+      "user_input": "停用 R05 后重查那个订单（多轮）",
+      "expected_tools": [
+        "risk_check",
+        "toggle_rule",
+        "risk_check"
+      ],
+      "actual_tools": [
+        "risk_check",
+        "toggle_rule",
+        "risk_check"
+      ],
+      "tool_accuracy": "PASS",
+      "tool_accuracy_reason": "工具序列与标注一致",
+      "step_efficiency": "PASS",
+      "step_efficiency_reason": "无重复/无冗余步骤",
+      "failure_modes": [],
+      "failure_reason": "无失败模式"
+    },
+    {
+      "trace_id": "risk_025",
+      "user_input": "把 R01 停用再恢复",
+      "expected_tools": [
+        "list_rules",
+        "toggle_rule",
+        "toggle_rule"
+      ],
+      "actual_tools": [
+        "list_rules",
+        "toggle_rule",
+        "toggle_rule"
+      ],
+      "tool_accuracy": "PASS",
+      "tool_accuracy_reason": "工具序列与标注一致",
+      "step_efficiency": "PASS",
+      "step_efficiency_reason": "无重复/无冗余步骤",
+      "failure_modes": [],
+      "failure_reason": "无失败模式"
+    }
+  ]
+}

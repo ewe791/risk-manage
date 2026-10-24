@@ -1,0 +1,32 @@
+[
+  {
+    "blacklist_type": "address",
+    "blacklist_value": "ADDR1001B",
+    "remark": "虚假收货地址：3 个月内 5 次拒收、地址与实名不一致",
+    "status": "active"
+  },
+  {
+    "blacklist_type": "user",
+    "blacklist_value": "U9001",
+    "remark": "骗赔惯犯，累计 6 次虚假售后",
+    "status": "active"
+  },
+  {
+    "blacklist_type": "ip",
+    "blacklist_value": "45.32.11.88",
+    "remark": "代理池出口 IP，关联 42 个异常账号",
+    "status": "active"
+  },
+  {
+    "blacklist_type": "device",
+    "blacklist_value": "DEV-BLACK-01",
+    "remark": "模拟器设备指纹，批量注册工具",
+    "status": "active"
+  },
+  {
+    "blacklist_type": "address",
+    "blacklist_value": "ADDR9999",
+    "remark": "空包收货地址，物流单号长期异常",
+    "status": "active"
+  }
+]

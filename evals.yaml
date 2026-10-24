@@ -1,0 +1,12 @@
+evaluators:
+  - name: tool_accuracy
+    weight: 0.4
+  - name: step_efficiency
+    weight: 0.3
+  - name: failure_modes
+    weight: 0.3
+
+thresholds:
+  tool_accuracy_pass_rate: 0.90
+  step_efficiency_pass_rate: 0.90
+  failure_modes_allowed: 0      # infinite_loop / context_overflow / tool_error_unhandled 允许次数

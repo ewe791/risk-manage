@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+*.db
+.pytest_cache/
+node_modules/
+frontend/dist/
+frontend/shots/
+*.log
+
+eval_traces.db
